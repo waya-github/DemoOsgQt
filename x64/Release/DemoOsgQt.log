@@ -1,0 +1,7 @@
+﻿  Uic'ing DemoOsgQt.ui...
+  moc_DemoOsgQt.cpp
+  DemoOsgQt.cpp
+  main.cpp
+c:\shared_folders\vcpkg_201912_installed_x64\include\triangle\triangle.h(10): warning C4005: “VOID”: 宏重定义 (编译源文件 DemoOsgQt.cpp)
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winnt.h(430): note: 参见“VOID”的前一个定义 (编译源文件 DemoOsgQt.cpp)
+  DemoOsgQt.vcxproj -> C:\Develop\DemoOsgQt\x64\Release\DemoOsgQt.exe
