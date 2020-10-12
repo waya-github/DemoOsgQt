@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DemoOsgQtClass</class>
+ <widget class="QMainWindow" name="DemoOsgQtClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1414</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DemoOsgQt</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="OsgViewerWidget" name="openGLWidgetOSGB">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>19</y>
+      <width>400</width>
+      <height>391</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>181</width>
+      <height>711</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>空间量测</string>
+     </attribute>
+     <widget class="QPushButton" name="pbt_001_ReadOsgbAndObjToViewer">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>171</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="text">
+       <string>001_读取Osgb和Obj文件     </string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbt_002_DrawPolygon">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>40</y>
+        <width>171</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>002_绘制三维多边形        </string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbt_000_InitializeOsgViewer">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>171</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>000_清空还原场景          </string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>三维标注</string>
+     </attribute>
+    </widget>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>430</y>
+      <width>1221</width>
+      <height>281</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="OsgViewerWidget" name="openGLWidgetOBJ">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>19</y>
+      <width>400</width>
+      <height>391</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="OsgViewerWidget" name="openGLWidgetShowMe">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>19</y>
+      <width>400</width>
+      <height>391</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>7</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>OSGB</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>783</x>
+      <y>7</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>OBJ</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>1194</x>
+      <y>7</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>其他</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>414</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>测试输出</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1414</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>OsgViewerWidget</class>
+   <extends>QOpenGLWidget</extends>
+   <header>osgviewerwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="DemoOsgQt.qrc"/>
+ </resources>
+ <connections/>
+</ui>
